@@ -5,6 +5,7 @@ public class Wumpus extends Componente {
 		//CONTRUTOR:
 		public Wumpus(Caverna caverna) {
 			super(caverna);
-			
+			type = "W";
 		}
+		
 }

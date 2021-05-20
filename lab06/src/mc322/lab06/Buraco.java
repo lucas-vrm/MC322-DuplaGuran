@@ -5,7 +5,7 @@ public class Buraco extends Componente {
 		//CONTRUTOR:
 		public Buraco(Caverna caverna) {
 			super(caverna);
-			
+			type = "B";
 			
 		}
 		

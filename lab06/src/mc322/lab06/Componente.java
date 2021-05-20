@@ -7,7 +7,7 @@ public class Componente {
 		//CONTRUTOR:
 		public Componente(Caverna caverna) {
 			this.caverna = caverna;
-			
+			type = "-";
 		}
 
 		public String getType() {
@@ -18,7 +18,26 @@ public class Componente {
 			this.type = type;
 		}
 		
-		public boolean posiciona(Caverna caverna, int Yc, int Xc) {
+		public int posiciona(Caverna caverna, int Yc, int Xc) {
+			return caverna.posiciona(Yc, Xc, this);
+		}
+		public int rePosiciona(String comando ) {
+			return 0;
+			
+		}
+		public boolean pegaOuro() {
+			return false;
+		}
+		public int equipaFlecha( ) {
+			return 5;
+		}
+		public int getFlecha() {
+			return -1;
+			
+		}
+		public void atiraFlecha() {
+		}
+		public boolean isTemOuro() {
 			return false;
 		}
 }

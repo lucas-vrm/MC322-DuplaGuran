@@ -27,7 +27,10 @@ public class Caverna {
 		}
 	}
 	
-	public boolean posiciona(int Yc,int Xc, Componente componente) {
+	public int posiciona(int Yc,int Xc, Componente componente) {
+		if(Yc==0 && Xc==0 && componente.isTemOuro()) {
+			return 8000;
+		}
 		return salas[Yc][Xc].podePosicionar(componente);
 			
 	}
@@ -46,5 +49,18 @@ public class Caverna {
 				System.out.println("");
 		}
 		System.out.println("  1 2 3 4");
+	}
+	
+	public void desposiciona(int Yc,int Xc, Componente componente) {
+		salas[Yc][Xc].desposiciona(componente);
+	}
+	public boolean pegaOuro(int Yh, int Xh) {
+		return salas[Yh][Xh].pegaOuro();
+		
+	}
+	public void removeFedor(int Yf, int Xf) {
+		salas[Yf][Xf].removeFedor();
+		
+		
 	}
 }

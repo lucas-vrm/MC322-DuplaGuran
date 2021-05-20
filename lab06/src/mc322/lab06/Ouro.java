@@ -5,7 +5,6 @@ public class Ouro extends Componente {
 		//CONTRUTOR:
 		public Ouro(Caverna caverna) {
 			super(caverna);
-			
+			type = "O";
 		}
-
 }
